@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* navbar */
+.navbar-container{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: rgb(211, 211, 211);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-container .whatsapp-logo{
+    padding-right: 10px;
+}
+
+/* maincontent */
+.container .maincontent-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* toolbar */
+
+.container .maincontent-container .toolbar{
+    position: sticky;
+    top: 0;
+    flex: 0.8;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border: 1px solid black;
+}
+
+.toolbar .icon{
+    padding: 0.4rem 0;
+}
+
+
+.toolbar .top-section{
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    text-decoration: underline;
+}
+
+.toolbar .mid-section{
+    /* padding-top: 5rem;
+    padding-bottom: 1rem; */
+    flex: 2;
+}
+
+
+.toolbar .bottom-section{
+    /* padding-top: 1rem;
+    padding-bottom: 0.5rem; */
+    flex: 2;
+}
+
+/* sidebar-container */
+.container .maincontent-container .sidebar-container{
+    flex: 5;
+    border: 1px solid black;
+    background-color: rgb(53, 53, 53);
+    
+}
+
+.sidebar-container .sidebar-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    padding: 0.1rem 1rem;
+}
+
+.sidebar-container .sidebar-nav .icons{
+    display: flex;
+}
+
+.sidebar-container .sidebar-nav .icons .new-chat{
+    padding: 0 2rem;
+}
+
+/* search-box-container */
+.sidebar-container .search-box-container{
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+} 
+
+.search-box-container .search-box{
+    padding: 0.8rem 6rem;
+    background-color: rgb(125, 125, 125);
+    border: none;
+    border-radius: 0.3rem;
+    border-bottom: solid 1px white;
+}
+
+.search-box-container .search-box::placeholder{
+    color: white;
+    margin-left: 0;
+}
+
+.search-box-container i{
+    position: absolute;
+    color: white;
+    top: 47% ;
+    left: 23%;
+}
+
+
+/* contacts */
+.contacts-container{
+    padding: 0.8rem 1rem;
+}
+
+.contacts-container .contacts{
+    padding: 0.5rem 0;
+}
+
+.contacts-container .contacts .display-picture-container img{
+    border-radius: 50%;
+}
+
+/* chatspace-container */
+.container .maincontent-container .chatspace-container{
+    flex: 12;
+    border: 1px solid black;
+    background-color: rgb(53, 53, 53);
+}
+
+
